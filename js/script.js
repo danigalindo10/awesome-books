@@ -10,13 +10,17 @@ addBook.addEventListener('click', function(){
 		const li = document.createElement('li');
 
 		const removeButton = document.createElement('button');
-		li.innerHTML = 
+		
+
+		
+		const divAuthor = document.createElement('div');
+		divAuthor.innerHTML = newAuthor.value;
 		newTitle.value;
-		newAuthor.value;
+		
 		removeButton.value;
 
 		booklist.appendChild(li);
-		
+
 	}
 })
 
