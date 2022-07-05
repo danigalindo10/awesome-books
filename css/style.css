@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Staatliches&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: bolder;
-    color: rgb(90, 6, 73);
-
-  }
-
-body * {
-  outline: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: #000;
 }
 
 li {
@@ -75,7 +71,7 @@ nav > ul {
   gap: 1.5rem;
 }
 
-.book{
+.book {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -85,7 +81,16 @@ nav > ul {
   margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
+}
 
+.class-book {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.class-book button {
+  padding: 9px;
 }
 
 .remove {
@@ -125,14 +130,16 @@ nav > ul {
 #all-books {
   border-width: 2px;
   border-color: black;
-  width: 96%;
+  width: 50%;
   margin: 0 auto 1rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
-#book-list{
-  display:grid;
+#book-list {
+  display: grid;
   grid-template-columns: 1fr;
-  gap:40px;
+  gap: 40px;
 }
 
 #content {
@@ -156,4 +163,3 @@ nav > ul {
   flex-direction: column;
   gap: 1rem;
 }
-
