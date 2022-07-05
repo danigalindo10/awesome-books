@@ -3,6 +3,7 @@ const newTitle = document.getElementById('new-title');
 const newAuthor = document.getElementById('new-author');
 const addBook = document.getElementById('add-book');
 
+// Local Storage Section
 if (!localStorage.getItem('bookInfo')) {
   localStorage.setItem('bookInfo', JSON.stringify([]));
 }
