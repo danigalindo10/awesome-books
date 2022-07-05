@@ -10,9 +10,6 @@
 - CSS
 - JavaScript
 
-## Live Demo (if available)
-
-	@@ -18,55 +18,55 @@
 
 ## Getting Started
 
