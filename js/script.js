@@ -4,27 +4,39 @@ const newTitle = document.getElementById('new-title');
 const newAuthor = document.getElementById('new-author');
 
 addBook.addEventListener('click', function(){
-	if (newTitle.value = "" && newAuthor.value == "") {
+	if (newTitle.value == "" && newAuthor.value == "") {
 		alert("Enter any title and author of the book");
-	} else {
-		const li = document.createElement('li');
-
-		const removeButton = document.createElement('button');
-		
-
-		
-		const divAuthor = document.createElement('div');
-		divAuthor.innerHTML = newAuthor.value;
-		newTitle.value;
-		
-		removeButton.value;
-
-		booklist.appendChild(li);
-
 	}
+     else 
+          {
+            const div= document.createElement("div");
+            const divTitle = document.createElement("div");
+            const divAuthor = document.createElement("div");
+            const removeButton = document.createElement("button");
+            removeButton.innerHTML += `Remove Book `
+
+            // Add id and classes to the elements
+            divTitle.classList.add("author");
+            divAuthor.classList.add("title");
+            removeButton.classList.add("remove");
+            div.classList.add("book");
+            
+            //Add title and author to the html container\
+            divTitle.innerHTML = newTitle.value;
+            div.appendChild(divTitle);
+            console.log(divTitle)
+
+            divAuthor.innerHTML = newAuthor.value;
+            div.appendChild(divAuthor);
+
+            div.appendChild(removeButton);
+
+            booklist.appendChild(div);
+  }
 })
 
-
+//removeButton.value;
+//const removeButton = document.createElement('button');
 // const booklist = document.getElementById('book-list');
 // const addBook = document.getElementById('add-book');
 // const newTitle = document.getElementById('new-title');
@@ -47,7 +59,7 @@ addBook.addEventListener('click', function(){
 //   const removeButton = document.createElement('button');
 //   const li = document.createElement('li');
 
-//   // Add id and classes to the elements
+  // Add id and classes to the elements
 //   divTitle.classList.add('author');
 //   divAuthor.classList.add('title');
 //   removeButton.classList.add('remove');

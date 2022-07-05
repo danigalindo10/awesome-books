@@ -6,6 +6,7 @@
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
+    color: rgb(90, 6, 73);
 
   }
 
@@ -74,10 +75,23 @@ nav > ul {
   gap: 1.5rem;
 }
 
+.book{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  gap: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
 .remove {
   align-self: flex-end;
   appearance: none;
-  padding: 0.5rem;
+  padding: 0.3rem;
   transition-duration: 0.3s;
 }
 
@@ -115,15 +129,10 @@ nav > ul {
   margin: 0 auto 1rem;
 }
 
-#book-list li {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  padding: 1rem;
-  gap: 80px;
-  max-width: 50%;
-  margin: 0 auto;
-  justify-content: center;
+#book-list{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:40px;
 }
 
 #content {
@@ -148,6 +157,3 @@ nav > ul {
   gap: 1rem;
 }
 
-#book-list li {
-  color: #000;
-}
