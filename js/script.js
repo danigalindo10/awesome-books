@@ -9,30 +9,34 @@ addBook.addEventListener('click', function(){
 	}
      else 
           {
-            const div= document.createElement("div");
+            // created new html elements for title, author and remove button"
+            const div = document.createElement("div");
             const divTitle = document.createElement("div");
             const divAuthor = document.createElement("div");
             const removeButton = document.createElement("button");
-            removeButton.innerHTML += `Remove Book `
 
-            // Add id and classes to the elements
+            // Added the text "Remove Book" to show on the remove button
+            removeButton.innerHTML += `Remove Book `;
+
+            // Added  classes to the elements
             divTitle.classList.add("author");
             divAuthor.classList.add("title");
             removeButton.classList.add("remove");
             div.classList.add("book");
-            
-            //Add title and author to the html container\
+
+            //Add title and author to the created book container
             divTitle.innerHTML = newTitle.value;
             div.appendChild(divTitle);
-            console.log(divTitle)
 
             divAuthor.innerHTML = newAuthor.value;
             div.appendChild(divAuthor);
 
+            //Add remove button to the created book container
             div.appendChild(removeButton);
 
+            //Add the whole book container(div) to the booklist on html
             booklist.appendChild(div);
-  }
+          }
 })
 
 //removeButton.value;
