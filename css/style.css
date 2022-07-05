@@ -1,31 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Staatliches&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  color: #000;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #2727eb;
 
-li {
-  list-style: none;
-}
+  }
 
-fieldset {
-  margin-top: 2rem;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:visited {
-  color: #000;
-}
+html{
+  background-image: url(/images/main.bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
 
 button {
   appearance: none;
@@ -33,45 +22,27 @@ button {
   background-color: #fff;
 }
 
-h1,
-h2 {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
 
 h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-size: 2.3rem;
+  
 }
 
 hr {
   margin: 2rem auto;
-  width: 10%;
+  padding: 1.5px;
+  width: 30%;
+  border-radius: 40%;
   border-width: 2px;
-  border-color: #000;
-  background-color: #000;
+  border-color: rgb(197, 191, 191);
+  background-color: rgb(141, 140, 140);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  width: 96%;
-  margin: 1rem auto 0;
-  border: solid 1px #000;
-  margin-bottom: 26px;
-}
 
-nav > ul {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.book {
+.book{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -81,16 +52,7 @@ nav > ul {
   margin: 0 auto;
   justify-content: center;
   align-items: flex-start;
-}
 
-.class-book {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.class-book button {
-  padding: 9px;
 }
 
 .remove {
@@ -101,65 +63,99 @@ nav > ul {
 }
 
 #new-book {
-  width: 96%;
+  width: 100%;
+  padding: 1rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
   gap: 1rem;
   border: none;
+  align-items: flex-end;
 }
 
-#new-book > * {
-  width: 50%;
-  margin: 0 auto;
-  padding: 0.5rem;
+input{
+  font-size: 1.2em;
+  width:100%;
+  padding: 0.8rem;
 }
 
-#add-book {
-  padding: 0.5rem;
-  appearance: none;
-  float: right;
-  transition-duration: 0.1s;
-}
 
 #add-book:active {
   background-color: rgb(156, 147, 147);
 }
 
 #all-books {
-  border-width: 2px;
-  border-color: black;
-  width: 50%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 3px solid rgb(69, 134, 188);
+  width: 90%;
   margin: 0 auto 1rem;
+  margin-bottom: 70px;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem;
 }
 
-#book-list {
-  display: grid;
+#book-list{
+  display:grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap:2px;
+  width: 100%;
+  align-items: flex-start;
 }
 
-#content {
+.the-book{
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  background-color: #99d4e0;
+  padding-right: 20px;
+  
+}
+
+.book-details{
   display: flex;
-  flex-direction: column;
+  gap:30px;
+  padding: 15px 10px 15px 5px;
+  color: black;
+
 }
 
-#contact > * {
-  width: 50%;
-  margin: 2rem auto;
+.book-details p{
+  color: black;
+  font-size: 1.3em;
 }
 
-#contact a {
-  text-decoration: underline;
+.infor:first-letter {
+    text-transform: uppercase;
 }
 
-#contact > ul {
-  list-style: square;
-  padding-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+#add-new-book{
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 20em;
 }
+
+#add-new-book h2{
+  font-size:2em;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.delete{
+ margin-left: 1px;
+ border-bottom: 6px solid black;
+ border-right: 6px solid grey;
+}
+
+#add-book{
+  width: 30%;
+  border-bottom: 6px solid black;
+  border-right: 7px solid grey;
+ }
+
+
+
