@@ -20,7 +20,6 @@ To get a local copy up and running follow these simple example steps.
 -Set up linter > Lighthouse , Webhint ,Stylelint ,
 -Added Eslint
 
-
 ### Run tests
 
 Then open your favourite code editor (Optional VSCode), and use the live server extension to see your changes result.
