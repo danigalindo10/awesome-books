@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books: plain JavaScript with classes
+# Awesome books: a complete website with navigation
 
-> In this project we creaed a booklist web page where you can add or remove a book from the page. Also, the data is saved on the local storage.
+> In this project we creaed a booklist web page where you can add or remove a book from the page. Also, the data is saved on the local storage.Each section appears when the user clicks on the navigation link.The sections appears one at a time.
 
 ## Built With
 
 - VSCode
 - HTML
 - CSS
-- JavaScript
+- JavaScript classes, objects and arrays
 
 ## Getting Started
 

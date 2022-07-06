@@ -258,17 +258,13 @@ input {
 }
 
 @media screen and (max-width: 768px) {
-
   #book-library {
     margin-top: 1em;
   }
 
-  #add-new-book {
-    margin-top: 7em;
-  }
-
   #contact-section {
     margin-top: 1em;
+
     /* margin-bottom: 1em; */
   }
 
@@ -315,6 +311,7 @@ input {
   }
 
   #add-new-book {
+    margin-top: 7em;
     width: 95%;
   }
 
