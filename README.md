@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books: plain JavaScript with objects
+# Awesome books: plain JavaScript with classes
 
 > In this project we creaed a booklist web page where you can add or remove a book from the page. Also, the data is saved on the local storage.
+
 ## Built With
 
 - VSCode
 - HTML
 - CSS
 - JavaScript
-
 
 ## Getting Started
 
@@ -24,21 +24,20 @@ To get a local copy up and running follow these simple example steps.
 
 Then open your favourite code editor (Optional VSCode), and use the live server extension to see your changes result.
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 - Github flow knowledge.
 - Basic CSS and HTML.
 - Installation of files.
-- Javasript arrays and objects.
+- Javasript arrays, objects and classes.
 
 ### Setup
 -To clone the repository run `git@github.com:danigalindo10/awesome-books.git` in your terminal
 
 ### Install
 -Set up Github Actions
--Set up linter > Lighthouse , Webhint ,Stylelint ,
+-Set up linter > Lighthouse, Webhint, Stylelint.
 -Added Eslint
 
 
