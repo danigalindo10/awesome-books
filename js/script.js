@@ -13,10 +13,10 @@ class Book {
 class Store {
   static getBooks() {
     let books;
-    if (localStorage.getItem("books") === null) {
+    if (localStorage.getItem('books') === null) {
       books = [];
     } else {
-      books = JSON.parse(localStorage.getItem("books"));
+      books = JSON.parse(localStorage.getItem('books'));
     }
     return books;
   }
@@ -24,7 +24,7 @@ class Store {
   static addBook(book) {
     const books = Store.getBooks();
     books.push(book);
-    localStorage.setItem("books", JSON.stringify(books));
+    localStorage.setItem('books', JSON.stringify(books));
   }
 
   static removeBook(author) {
@@ -34,7 +34,7 @@ class Store {
         books.splice(index, 1);
       }
     });
-    localStorage.setItem("books", JSON.stringify(books));
+    localStorage.setItem('books', JSON.stringify(books));
   }
 }
 
@@ -46,45 +46,46 @@ class awesomeBooks {
   }
 
   static addBookToList(book) {
-    const list = document.getElementById("book-list");
-    const listBook = document.createElement("div");
-    listBook.classList.add("the-book");
+    const list = document.getElementById('book-list');
+    const listBook = document.createElement('div');
+    listBook.classList.add('the-book');
 
     listBook.innerHTML = `
-              <div class="book-details">
-                <p class="infor">"${book.title}"</p>
-                <p>by</p>
-                <p class="infor">${book.author}</p>
-              </div>
-                <button class="delete">Remove</button>
-             `;
+      <div class="book-details">
+        <p class="infor">"${book.title}"</p>
+        <p>by</p>
+        <p class="infor">${book.author}</p>
+        <button class="delete">Remove</button>
+      </div>
+      
+      `;
 
     list.appendChild(listBook);
   }
 
   static deleteBook(el) {
-    if (el.classList.contains("delete")) {
+    if (el.classList.contains('delete')) {
       el.parentElement.remove();
     }
   }
 
   static clearField() {
-    document.querySelector("#title").value = "";
-    document.querySelector("#author").value = "";
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
   }
 }
 
 // Event: Display Books
-document.addEventListener("DOMContentLoaded", awesomeBooks.displayBooks);
+document.addEventListener('DOMContentLoaded', awesomeBooks.displayBooks);
 
 // Event: Add a Book
-document.querySelector("#new-book").addEventListener("submit", (e) => {
+document.querySelector('#new-book').addEventListener('submit', (e) => {
   // Prevent actual submit
   e.preventDefault();
 
   // Get form values
-  const title = document.querySelector("#new-title").value;
-  const author = document.querySelector("#new-author").value;
+  const title = document.querySelector('#new-title').value;
+  const author = document.querySelector('#new-author').value;
 
   // Instatiate book
   const book = new Book(title, author);
@@ -100,7 +101,7 @@ document.querySelector("#new-book").addEventListener("submit", (e) => {
 });
 
 // Event: Remove a Book
-document.querySelector("#book-list").addEventListener("click", (e) => {
+document.querySelector('#all-books').addEventListener('click', (e) => {
   awesomeBooks.deleteBook(e.target);
 
   Store.removeBook(e.target.previousElementSibling.textContent);
