@@ -25,19 +25,22 @@
       </ul>
     </nav>
   </header>
-  <!--Container Section-->
-  <h1>All awesome books</h1>
-  <div id="container">
+  <div id="date"></div>
 
+  <!--Container Section-->
+  
+  <div id="container">
     <!--Collection Section-->
+    <div id="book-library">
+    <h1>All awesome books</h1>
     <section id="all-books">
       <div id="book-list">
         <!--Book List with JS-->
       </div>
     </section>
-    
+    </div>
     <!--Add new book section-->
-    <section id="add-new-book">
+    <section id="add-new-book" class="hide">
       <h2>Add a new book</h2>
       <form id="new-book">
         <input type="text" name="title" id="new-title" placeholder="Title" required>
@@ -47,7 +50,7 @@
     </section>
 
     <!-- Contact section -->
-    <section id="contact-section">
+    <section id="contact-section" class="hide">
       <h2 class="contact-title">Contact Information</h2>
       <p class="contact-text">
         Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!

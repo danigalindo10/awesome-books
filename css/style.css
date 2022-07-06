@@ -12,7 +12,6 @@
 
 html {
   background-image: url(/images/main.bg.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -73,6 +72,20 @@ a {
   border-right: none;
 }
 
+/* Date and Time section */
+#date {
+  text-align: right;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Book Library */
+
+#book-library {
+  margin-top: 10em;
+}
+
 .book {
   display: flex;
   flex-direction: column;
@@ -90,6 +103,22 @@ a {
   appearance: none;
   padding: 0.3rem;
   transition-duration: 0.3s;
+}
+
+.remove:hover {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.remove:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+  background-color: rgb(156, 147, 147);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
 #new-book {
@@ -168,6 +197,7 @@ input {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 10em;
+  margin-top: 10em;
 }
 
 #add-new-book h2 {
@@ -193,6 +223,7 @@ input {
   background-color: #fff;
   background-size: cover;
   padding: 10px;
+  margin-top: 10em;
 }
 
 .contact-title {
@@ -201,28 +232,46 @@ input {
   text-align: center;
   margin-bottom: 1.5em;
   width: 60%;
+  margin-top: 1em;
 }
 
 .contact-text {
   font-size: 1rem;
   text-align: left;
   margin: 0 auto;
-  width: 70%;
+  width: 88%;
   margin-bottom: 2rem;
 }
 
 .contact-details {
   margin: 0 auto;
   width: 60%;
+  margin-bottom: 2em;
 }
 
 .footer {
   width: 100%;
   background-color: #fff;
   padding: 0.8rem;
+  position: fixed;
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
+
+  #book-library {
+    margin-top: 1em;
+  }
+
+  #add-new-book {
+    margin-top: 7em;
+  }
+
+  #contact-section {
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+  }
+
   h1 {
     text-align: center;
     margin-top: 3rem;
