@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,11 @@
   <script defer src="/js/script.js"></script>
   <title>Awesome Books - Daniel and Natasha</title>
 </head>
+
 <body>
+  <header class="header">
+    <h1>All awesome books</h1>
+  </header>
   <!--Container Section-->
   <div id="container">
     <!--Collection Section-->
@@ -22,14 +27,18 @@
       </div>
     </section>
     <!--Add new book section-->
+    <hr>
+
     <section id="add-new-book">
-      <fieldset id="new-book">
-        <input type="text" name="title" id="new-title" placeholder="Title">
-        <input type="text" name="author" id="new-author" placeholder="Author">
-        <div><button type="button" id="add-book">Add book</button></div>
-      </fieldset>
+      <h2>Add a new book</h2>
+      <form id="new-book">
+        <input type="text" name="title" id="new-title" placeholder="Title" required>
+        <input type="text" name="author" id="new-author" placeholder="Author" required>
+        <input type="submit" id="add-book" value="Add book">
+      </form>
     </section>
     <!-- Contact section -->
   </div>
 </body>
+
 </html>
