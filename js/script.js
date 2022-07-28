@@ -106,3 +106,36 @@ document.querySelector('#all-books').addEventListener('click', (e) => {
 
   Store.removeBook(e.target.previousElementSibling.textContent);
 });
+
+// Date and Time
+const d = new Date();
+document.getElementById('date').innerHTML = d;
+
+// Activate and desactivate sections
+
+const allBooksSection = document.getElementById('book-library');
+const addNewBookSection = document.getElementById('add-new-book');
+const contactSection = document.getElementById('contact-section');
+const listLink = document.getElementById('list-link');
+const addLink = document.getElementById('add-link');
+const contactLink = document.getElementById('contact-link');
+
+listLink.addEventListener('click', () => {
+  allBooksSection.classList.remove('hide');
+  addNewBookSection.classList.add('hide');
+  contactSection.classList.add('hide');
+});
+
+// addLink
+addLink.addEventListener('click', () => {
+  allBooksSection.classList.add('hide');
+  addNewBookSection.classList.remove('hide');
+  contactSection.classList.add('hide');
+});
+
+// contactLink
+contactLink.addEventListener('click', () => {
+  allBooksSection.classList.add('hide');
+  addNewBookSection.classList.add('hide');
+  contactSection.classList.remove('hide');
+});

@@ -16,20 +16,31 @@
 
 <body>
   <header class="header">
-    <h1>All awesome books</h1>
+    <nav>
+      <a href="#">Awesome Books</a>
+      <ul class="nav-links">
+        <li><a href="#container" id="list-link">List</a></li>
+        <li><a href="#add-new-book" id="add-link">Add</a></li>
+        <li><a href="#contact-section" id="contact-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+  <div id="date"></div>
+
   <!--Container Section-->
+  
   <div id="container">
     <!--Collection Section-->
+    <div id="book-library">
+    <h1>All awesome books</h1>
     <section id="all-books">
       <div id="book-list">
         <!--Book List with JS-->
       </div>
     </section>
+    </div>
     <!--Add new book section-->
-    <hr>
-
-    <section id="add-new-book">
+    <section id="add-new-book" class="hide">
       <h2>Add a new book</h2>
       <form id="new-book">
         <input type="text" name="title" id="new-title" placeholder="Title" required>
@@ -37,8 +48,23 @@
         <input type="submit" id="add-book" value="Add book">
       </form>
     </section>
+
     <!-- Contact section -->
+    <section id="contact-section" class="hide">
+      <h2 class="contact-title">Contact Information</h2>
+      <p class="contact-text">
+        Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!
+      </p>
+      <ul class="contact-details">
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
   </div>
+  <footer class="footer">
+    Copyright ...
+  </footer>
 </body>
 
 </html>
